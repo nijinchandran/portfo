@@ -47,18 +47,19 @@
 
     <section class="hidden" data-aos="fade-up" id="home" >
 
-        <img data-aos="zoom-in-up" src="/images/man.png" alt="">
+        <img data-aos="zoom-in-up" src="/images/man.png " alt="">
        <h1 style="font-family: 'Oswald', sans-serif;font-size: 17px;;">NIJIN  CHANDRAN</h1><br>
-        <h4>I'am a Full Stack Developer <br>(DJANGO)</h4>
+        <h4>I'am a <span id="element"></span></h4>
         <ul style="display:flex;">
-            <li ><a href="https://www.instagram.com/_niji_n_/"><i
+            <li><a href="https://www.instagram.com/_niji_n_/"><i data-aos="flip-right"
                         class="fab fa-instagram"></i></a></li>
             <li ><a href="https://www.facebook.com/nijin.chandran.35/"><i
+                data-aos="flip-right"
                         class="fab fa-linkedin"></i></a></li>
-            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+            <li><a href=""><i data-aos="flip-right" class="fab fa-facebook"></i></a></li>
         </ul>
         
-        <button   type="submit">Download cv</button>
+        <a download="man.png" class="button" href="./images/man.png">Download cv</a> 
       
     </section>
 
@@ -103,8 +104,9 @@
 
 
 
-    <h4 class="ab" data-aos="fade-up" style="text-align: center; font-family: 'Oswald', sans-serif;color: white;letter-spacing: 2px;">TECHNICAL SKILLS</h4>
 <section class="hidden"  data-aos="fade-up" id="about" >
+    <h3 class="pr" data-aos="fade-up" style="font-family: 'Oswald', sans-serif;letter-spacing: 2px;">TECHNICAL SKILLS</h3>
+
 
 
    <div class="container">
@@ -152,9 +154,8 @@
     </section>
 
 
-
     
-
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
@@ -163,6 +164,17 @@
       });
     </script>
 
+
+<SCript>
+
+
+const typed = new Typed('#element', {
+  strings: ["Full Stack Developer", "Django Developer"],
+  typeSpeed: 60,
+  backSpeed: 60,
+  loop: true,
+});
+</SCript>
 
 </body>
 <script src="app.js"></script>
